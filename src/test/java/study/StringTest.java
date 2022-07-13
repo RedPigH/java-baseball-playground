@@ -1,8 +1,10 @@
 package study;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 public class StringTest {
     @Test
@@ -30,8 +32,14 @@ public class StringTest {
     }
 
     @Test
+    @DisplayName("특정 위치의 문자 확인 테스트")
     void charat(){
         /*Require 3*/
+        String Require3 = "abc";
+        int index = 3;
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+            Require3.charAt(3);
+        }, "index : " + index + " Size : " + Require3.length());
     }
 }
 
