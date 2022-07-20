@@ -9,11 +9,15 @@ public class GameUtil {
         return Integer.toString(i).matches("[1-9]");
     }
 
-    public static boolean isExist(List<Integer> list, int i) {
-        return list.stream().anyMatch(num -> num.equals(i));
+    public static boolean isExist(List<Integer> list) {
+        return list.size() != list.stream().distinct().count();
     }
 
     public static boolean SizeVaildate(List<Integer> list) {
         return list.size() == SIZE;
+    }
+
+    public static boolean CheckOperation(int i){
+        return (i == 1 || i == 2);
     }
 }

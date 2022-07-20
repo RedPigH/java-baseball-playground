@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 
 public class Answer {
     private List<Integer> answer;
-
     public Answer(){
         this.answer = makeAnswer();
     }
