@@ -1,4 +1,4 @@
-package study.step1;
+package study.prac;
 
 public class StringCalculatorTest {
 }
