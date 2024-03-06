@@ -1,4 +1,4 @@
-package study.numberbaseball.step1.domain;
+package study.NumberBaseball.step1.domain;
 
 import java.util.List;
 import java.util.function.Predicate;
